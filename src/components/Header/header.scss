@@ -10,7 +10,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px 0;
+	padding: 16px 0;
+    a {
+        text-decoration: none;
+        color: #5f5245;
+    }
     &.sticky {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     }

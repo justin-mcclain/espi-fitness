@@ -16,7 +16,13 @@ const Header = () => {
 	return (
 		<div id="header" className={`header ${isSticky ? "sticky" : ""}`}>
 			<div id="header-content">
-				<h4 className="h4">ESPI Fitness Performance & Recovery</h4>
+				<NavLink
+					to="/"
+					className={({ isActive }) =>
+						isActive ? "active-link" : ""
+					}>
+					<h4 className="h4">ESPI Fitness Performance & Recovery</h4>
+				</NavLink>
 				<nav>
 					<div id="navbar">
 						<div class="h6">
@@ -39,7 +45,7 @@ const Header = () => {
 						</div>
 						<div class="h6">
 							<NavLink
-								to="/"
+								to="/testimonials"
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>
