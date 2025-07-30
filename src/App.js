@@ -4,6 +4,7 @@ import Footer from "./components/Footer/footer";
 import Home from "./components/Home/home";
 import About from "./components/About/about";
 import Services from "./components/Services/services";
+import Testimonials from "./components/Testimonials/testimonials";
 import FAQ from "./components/FAQ/faq";
 import Contact from "./components/Contact/contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
 						<Route path="/services" element={<Services />} />
 						<Route path="/faq" element={<FAQ />} />
 						<Route path="/contact" element={<Contact />} />
+						<Route path="/testimonials" element={<Testimonials />} />
 					</Routes>
 				</main>
 				<Footer />
