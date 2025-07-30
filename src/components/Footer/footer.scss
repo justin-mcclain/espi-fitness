@@ -1,0 +1,82 @@
+@import "/src/styles/mixins.scss";
+
+#footer {
+	width: clamp(300px, 80vw, 1000px);
+	display: flex;
+	justify-content: center;
+	gap: 240px;
+	align-items: flex-start;
+}
+#footer-content {
+	min-height: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	p {
+		&:first-of-type {
+			text-decoration: underline;
+		}
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+		color: #546243;
+	}
+	button {
+		@include button-style;
+	}
+}
+
+#socials {
+	display: flex;
+	gap: 10px;
+	img {
+		height: 24px;
+		width: 24px;
+	}
+	.social-link {
+		position: relative;
+		display: inline-block;
+
+        .social-white {
+            filter: invert(33%) sepia(14%) saturate(569%) hue-rotate(349deg) brightness(96%) contrast(96%);
+        }
+
+		.social-white,
+		.social-color {
+			width: 24px;
+			height: 24px;
+			transition: opacity 0.3s ease;
+		}
+
+		.social-color {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
+
+		&:hover {
+			.social-white {
+				opacity: 0;
+			}
+
+			.social-color {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#fix {
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	p {
+		margin: 0;
+	}
+}

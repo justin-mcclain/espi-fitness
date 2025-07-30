@@ -1,0 +1,108 @@
+// Type Scale with Base: 16px, Ratio: 1.25
+// Generated with TypeScale Generator
+
+// Base Typography Variables
+$base-font-size: 16px;
+$scale-ratio: 1.25;
+$font-family: Montserrat, sans-serif;
+
+$h1-size: 49px;
+$h1-line-height: 110%;
+$h1-letter-spacing: -.02em;
+
+$h2-size: 39px;
+$h2-line-height: 110%;
+$h2-letter-spacing: -.02em;
+
+$h3-size: 31px;
+$h3-line-height: 130%;
+$h3-letter-spacing: -.015em;
+
+$h4-size: 25px;
+$h4-line-height: 130%;
+$h4-letter-spacing: -.015em;
+
+$h5-size: 20px;
+$h5-line-height: 150%;
+$h5-letter-spacing: -0.005em;
+
+$h6-size: 18px;
+$h6-line-height: 150%;
+$h6-letter-spacing: 0%;
+
+$body-lg-size: 17px;
+$body-lg-line-height: 150%;
+$body-lg-letter-spacing: 0.005em;
+
+$body-size: 16px;
+$body-line-height: 150%;
+$body-letter-spacing: 0.005em;
+
+$link-size: 15px;
+$link-line-height: 150%;
+$link-letter-spacing: 0.005em;
+
+$caption-size: 14px;
+$caption-line-height: 160%;
+$caption-letter-spacing: 0.005em;
+
+// Typography Classes
+.h1 {
+	font-size: $h1-size;
+	line-height: $h1-line-height;
+	letter-spacing: $h1-letter-spacing;
+}
+
+.h2 {
+	font-size: $h2-size;
+	line-height: $h2-line-height;
+	letter-spacing: $h2-letter-spacing;
+}
+
+.h3 {
+	font-size: $h3-size;
+	line-height: $h3-line-height;
+	letter-spacing: $h3-letter-spacing;
+}
+
+.h4 {
+	font-size: $h4-size;
+	line-height: $h4-line-height;
+	letter-spacing: $h4-letter-spacing;
+}
+
+.h5 {
+	font-size: $h5-size;
+	line-height: $h5-line-height;
+	letter-spacing: $h5-letter-spacing;
+}
+
+.h6 {
+	font-size: $h6-size;
+	line-height: $h6-line-height;
+	letter-spacing: $h6-letter-spacing;
+}
+
+.body-lg {
+	font-size: $body-lg-size;
+	line-height: $body-lg-line-height;
+	letter-spacing: $body-lg-letter-spacing;
+}
+
+.body {
+	font-size: $body-size;
+	line-height: $body-line-height;
+	letter-spacing: $body-letter-spacing;
+}
+
+.link {
+	font-size: $link-size;
+	line-height: $link-line-height;
+	letter-spacing: $link-letter-spacing;
+}
+
+.caption {
+	font-size: $caption-size;
+	line-height: $caption-line-height;
+	letter-spacing: $caption-letter-spacing;
+}

@@ -1,0 +1,25 @@
+@import '/src/styles/mixins.scss';
+
+#home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+        @include button-style;
+    }
+}
+
+#mission {
+    width: clamp(300px, 80vw, 1000px);
+    margin: 20px auto;
+    text-align: center;
+}

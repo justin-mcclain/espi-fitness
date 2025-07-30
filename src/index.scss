@@ -1,0 +1,17 @@
+@import 'styles/_variables.scss';
+@import "/src/styles/typography.scss";
+@import '/src/styles/mixins.scss';
+
+body {
+	margin: 0;
+	font-family: $primary-font, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #eae7e4;
+	color: #5f5245;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}

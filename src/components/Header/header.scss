@@ -1,0 +1,58 @@
+@import "/src/styles/variables.scss";
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+	background-color: #eae7e4;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+    &.sticky {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    }
+    > * {
+        width: clamp(300px, 80vw, 1000px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+	#navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		div {
+			color: #5f5245;
+			position: relative;
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			&:hover {
+				cursor: pointer;
+				color: #bc8649;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: transparent;
+				transition: background-color 0.3s ease;
+			}
+			&:hover::after {
+				background-color: #bc8649;
+			}
+		}
+		.active-link {
+			cursor: pointer;
+			color: #bc8649;
+		}
+	}
+}
