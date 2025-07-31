@@ -12,9 +12,9 @@ const services = () => {
 			</div>
 			<div id="services-content">
 				<div className="service-item">
-					<img src={girl} />
+					<a href="https://book.squareup.com/appointments/4pojwird2xg04g/location/LV7B2Q2V3PRA6/services/JOKV3O25SI6W77IDJ3KASIMS"><img src={girl} /></a>
 					<div>
-						<h3 className="h3">Integrated Manual Therapy</h3>
+						<h3 className="h3"><a href="https://book.squareup.com/appointments/4pojwird2xg04g/location/LV7B2Q2V3PRA6/services/JOKV3O25SI6W77IDJ3KASIMS">Integrated Manual Therapy</a></h3>
 						<p className="body">
 							Combining Myoskeletal Alignment technqiues,
 							Structural Integration, Sports Massage & Deep Tissue
@@ -67,7 +67,7 @@ const services = () => {
 				<div className="service-item">
 					<img src={girl} />
 					<div>
-						<h3 className="h3">Nuerokinetic Therapy</h3>
+						<h3 className="h3">Neurokinetic Therapy</h3>
 						<p className="body">
 							A corrective movement system using manual muscle
 							testing to assess & rehabilitate acute & chronic

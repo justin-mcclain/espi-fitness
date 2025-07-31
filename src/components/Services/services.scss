@@ -5,12 +5,12 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-    #services-heading {
-        margin-bottom: 32px;
-        h2 {
-            @include highlight;
-        }
-    }
+	#services-heading {
+		padding-bottom: 32px;
+		h2 {
+			@include highlight;
+		}
+	}
 	h3 {
 		@include page-header;
 	}
@@ -18,20 +18,28 @@
 		width: clamp(300px, 80vw, 1000px);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 40px;
+		gap: clamp(20px, 4vw, 24px); // Responsive gap
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}
 	}
-    .service-item {
-        border: 1px solid #5f5245;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border-radius: 5px;
-        div {
-            padding: 16px;
-            h3 {
-                margin: 0 0 8px 0;
+	.service-item {
+		// border: 1px solid #5f52455f;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		border-radius: 5px;
+		width: 90%;
+		img {
+			width: 100%;
+		}
+		div {
+			padding: 16px;
+			h3 {
+				margin: 0 0 8px 0;
+			}
+            a {
+                color: inherit;
+                text-decoration: none;
             }
-        }
-    }
+		}
+	}
 }
