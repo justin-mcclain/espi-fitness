@@ -18,6 +18,7 @@
 		width: clamp(300px, 80vw, 1000px);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}
