@@ -18,7 +18,7 @@
 		width: clamp(300px, 80vw, 1000px);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: clamp(20px, 4vw, 24px); // Responsive gap
+		gap: clamp(20px, 4vw, 24px); 
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}

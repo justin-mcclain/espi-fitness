@@ -13,8 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: -24px; // Match your app padding
-	margin-right: -24px; // Match your app padding
+	margin-left: -24px;
+	margin-right: -24px;
 	button {
 		@include button-style;
 	}

@@ -17,30 +17,24 @@
 	}
 	#about-content {
 		width: clamp(300px, 80vw, 1000px);
-
 		.floating-image {
 			float: left;
-			margin: 0 16px 16px 0; // Right and bottom margin
-			width: 450px; // Adjust as needed
-			height: 550px; // Adjust as needed
+            filter: brightness(0.9);
+			margin: 0 16px 16px 0; 
+			width: 450px;
+			height: 550px; 
 			border-radius: 8px;
 			object-fit: cover;
 		}
-
 		h4 {
 			margin: 0 0 16px 0;
 			font-weight: 500;
-			// This will appear to the right of the image
 		}
-
 		p {
 			line-height: 1.6;
-			text-align: justify; // Optional: makes text look cleaner
-			// Text will wrap around the image, then continue below it
+			text-align: justify;
 		}
 	}
-
-	// Clear the float after the content
 	#about-content::after {
 		content: "";
 		display: table;
