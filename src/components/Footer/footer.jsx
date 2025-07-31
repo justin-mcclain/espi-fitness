@@ -51,7 +51,7 @@ export const Footer = () => {
 							3660 E University Dr. Unit 128 Mesa, AZ 85205
 						</a>
 					</p>
-					<a href="https://espifitness.square.site">
+					<a href="https://espifitness.square.site" target="_blank">
 						<button>Book Now</button>
 					</a>
 					<div id="socials">
