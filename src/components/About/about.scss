@@ -18,6 +18,7 @@
 	#about-content {
 		width: clamp(300px, 80vw, 1000px);
 		.floating-image {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 			float: left;
             filter: brightness(0.9);
 			margin: 0 16px 16px 0; 
@@ -26,9 +27,8 @@
 			border-radius: 8px;
 			object-fit: cover;
 		}
-		h4 {
+		h3 {
 			margin: 0 0 16px 0;
-			font-weight: 500;
 		}
 		p {
 			line-height: 1.6;

@@ -6,17 +6,14 @@
 	align-items: center;
 
 	margin: 0 auto;
-    #faq-heading {
-        margin-bottom: 32px;
-        h2 {
-            @include highlight;
-        }
-    }
-	h3 {
-		@include page-header;
+	#faq-heading {
+		margin-bottom: 32px;
+		h2 {
+			@include highlight;
+		}
 	}
 	#faq-content {
-        width: clamp(300px, 80vw, 1000px);
+		width: clamp(300px, 80vw, 1000px);
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
@@ -33,7 +30,10 @@
 	span {
 		text-decoration: underline;
 	}
-	h5,
+	h3 {
+		@include page-header;
+	}
+	h3,
 	p {
 		margin: 0;
 	}

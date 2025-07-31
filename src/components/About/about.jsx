@@ -17,9 +17,9 @@ const About = () => {
 					className="floating-image"
 				/>
 
-				<h4 className="h4">
-					<i>Jennifer Espinoza MS, LMT, FRCms, NKT, CPT</i>
-				</h4>
+				<h3 className="h3">
+					Jennifer Espinoza MS, LMT, FRCms, NKT, CPT
+				</h3>
 				<p class="body">
 					Hola, Im Jen! I feel so much gratitude knowing that someone
 					brought you to my page and I couldn’t be more excited to

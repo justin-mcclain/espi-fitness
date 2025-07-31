@@ -13,7 +13,7 @@ const faq = () => {
 			</div>
 			<div id="faq-content">
 				<div className="faq-item">
-					<h5 className="h5">What should I wear?</h5>
+					<h3 className="h3">What should I wear?</h3>
 					<p className="body">
 						<span>Males:</span> Exercise shorts & t-shirt.
 						<br />
@@ -25,7 +25,7 @@ const faq = () => {
 					</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">What session durations do you offer?</h5>
+					<h3 className="h3">What session durations do you offer?</h3>
 					<p className="body">
 						Sessions vary from 45 min to 2 hours depending on the
 						goal! Shorter sessions might be directed toward just
@@ -38,7 +38,7 @@ const faq = () => {
 					</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">Is cupping an additional fee?</h5>
+					<h3 className="h3">Is cupping an additional fee?</h3>
 					<p className="body">
 						No! I include all the techniques and tools I use in the
 						price. I don’t believe in up-charging for tools or
@@ -48,7 +48,7 @@ const faq = () => {
 					</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">What does the first session entail?</h5>
+					<h3 className="h3">What does the first session entail?</h3>
 					<p className="body">
 						Your 1st session is 90 min and includes: postural
 						assessment, passive and active movement assessments,
@@ -57,11 +57,11 @@ const faq = () => {
 					</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">Do you accept HSA/FSA?</h5>
+					<h3 className="h3">Do you accept HSA/FSA?</h3>
 					<p className="body">Yes!</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">How often should I come in?</h5>
+					<h3 className="h3">How often should I come in?</h3>
 					<p className="body">
 						If dealing with a chronic issue, I typically will
 						recommend 1x/week until we see tissue change, then move
@@ -82,9 +82,9 @@ const faq = () => {
 					</p>
 				</div>
 				<div className="faq-item">
-					<h5 className="h5">
+					<h3 className="h3">
 						Do you offer memberships or packages?
-					</h5>
+					</h3>
 					<p className="body">
 						I believe memberships are often created by businesses
 						just for your reoccurring revenue and not for the best
