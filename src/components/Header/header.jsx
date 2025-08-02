@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
 	const [isSticky, setIsSticky] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
 			setIsSticky(window.scrollY > 50);
@@ -13,6 +14,13 @@ const Header = () => {
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
+	const closeMenu = () => {
+		setIsMenuOpen(false);
+	};
 	return (
 		<div id="header" className={`header ${isSticky ? "sticky" : ""}`}>
 			<div id="header-content">
@@ -23,11 +31,20 @@ const Header = () => {
 					}>
 					<h4 className="h4">ESPI Fitness Performance & Recovery</h4>
 				</NavLink>
-				<nav>
+				<button
+					className={`hamburger ${isMenuOpen ? "open" : ""}`}
+					onClick={toggleMenu}
+					aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
 					<div id="navbar">
 						<div class="h6">
 							<NavLink
 								to="/about"
+								onClick={closeMenu}
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>
@@ -37,6 +54,7 @@ const Header = () => {
 						<div class="h6">
 							<NavLink
 								to="/services"
+								onClick={closeMenu}
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>
@@ -46,6 +64,7 @@ const Header = () => {
 						<div class="h6">
 							<NavLink
 								to="/testimonials"
+								onClick={closeMenu}
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>
@@ -55,6 +74,7 @@ const Header = () => {
 						<div class="h6">
 							<NavLink
 								to="/faq"
+								onClick={closeMenu}
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>
@@ -64,6 +84,7 @@ const Header = () => {
 						<div class="h6">
 							<NavLink
 								to="/contact"
+								onClick={closeMenu}
 								className={({ isActive }) =>
 									isActive ? "active-link" : ""
 								}>

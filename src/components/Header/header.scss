@@ -1,7 +1,7 @@
 @import "/src/styles/variables.scss";
 
 #header {
-    margin: 0 auto;
+	margin: 0 auto;
 	background-color: #eae7e4;
 	position: sticky;
 	top: 0;
@@ -10,19 +10,19 @@
 	justify-content: center;
 	align-items: center;
 	padding: 16px 0;
-    a {
-        text-decoration: none;
-        color: #5f5245;
-    }
-    &.sticky {
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    }
-    > * {
-        width: clamp(300px, 80vw, 1000px);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+	a {
+		text-decoration: none;
+		color: #5f5245;
+	}
+	&.sticky {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	}
+	> * {
+		width: clamp(300px, 80vw, 1000px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	#navbar {
 		display: flex;
 		justify-content: center;
@@ -56,6 +56,76 @@
 		.active-link {
 			cursor: pointer;
 			color: #bc8649;
+		}
+	}
+}
+
+// Hide hamburger on desktop, show nav
+.hamburger {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	#header-content {
+		position: relative;
+	}
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 5px;
+		z-index: 1001;
+
+		span {
+			width: 25px;
+			height: 3px;
+			background-color: #5f5245;
+			margin: 3px 0;
+			transition: 0.3s;
+		}
+
+		&.open span:nth-child(1) {
+			transform: rotate(-45deg) translate(-5px, 6px);
+		}
+		&.open span:nth-child(2) {
+			opacity: 0;
+		}
+		&.open span:nth-child(3) {
+			transform: rotate(45deg) translate(-5px, -6px);
+		}
+	}
+
+	nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: white;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		transform: translateY(-100%);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+		z-index: 1000;
+		&.nav-open {
+			display: flex;
+			justify-content: center;;
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	#navbar {
+		flex-direction: column;
+		padding: 20px;
+
+		.h6 {
+			margin: 10px 0;
+			text-align: center;
 		}
 	}
 }

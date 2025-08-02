@@ -40,7 +40,10 @@ export const Footer = () => {
 						</p>
 						<p className="caption">
 							<FiMapPin />{" "}
-							<a href="https://maps.app.goo.gl/qvuaJp6nKA3UdKrq7">
+							<a
+								href="https://maps.app.goo.gl/qvuaJp6nKA3UdKrq7"
+								target="_blank"
+								rel="noreferrer">
 								3660 E University Dr. Unit 128 Mesa, AZ 85205
 							</a>
 						</p>
@@ -57,7 +60,9 @@ export const Footer = () => {
 						<div id="socials">
 							<a
 								href="https://www.facebook.com/EspiFit/"
-								className="social-link">
+								className="social-link"
+								target="_blank"
+								rel="noreferrer">
 								<img
 									src={fbIconWhite}
 									alt="Facebook"
@@ -71,6 +76,8 @@ export const Footer = () => {
 							</a>
 							<a
 								href="https://www.instagram.com/espfit_"
+								target="_blank"
+								rel="noreferrer"
 								className="social-link">
 								<img
 									src={igIconWhite}

@@ -43,7 +43,7 @@ const Contact = () => {
 			<div id="contact-content">
 				<form onSubmit={handleSubmit}>
 					<div className="row">
-						<div className="col">
+						<div className="col-12 col-md-6">
 							<div className="form-floating mb-3">
 								<input
 									type="text"
@@ -56,7 +56,7 @@ const Contact = () => {
 								<label htmlFor="firstName">First Name</label>
 							</div>
 						</div>
-						<div className="col">
+						<div className="col-12 col-md-6">
 							<div className="form-floating mb-3">
 								<input
 									type="text"
@@ -87,7 +87,7 @@ const Contact = () => {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col">
+						<div className="col-12 col-md-6">
 							<div className="form-floating mb-3">
 								<input
 									type="tel"
@@ -101,7 +101,7 @@ const Contact = () => {
 								<label htmlFor="phone">Phone</label>
 							</div>
 						</div>
-						<div className="col">
+						<div className="col-12 col-md-6">
 							<div className="form-floating mb-3">
 								<select
 									className="form-select"
@@ -156,7 +156,7 @@ const Contact = () => {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col">
+						<div className="col-12 col-md-6">
 							<button type="submit">Submit</button>
 						</div>
 					</div>
