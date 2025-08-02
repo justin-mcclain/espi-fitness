@@ -46,7 +46,8 @@ export const Footer = () => {
 						</p>
 						<a
 							href="https://espifitness.square.site"
-							target="_blank">
+							target="_blank"
+							rel="noreferrer">
 							<button>Book Now</button>
 						</a>
 					</div>
