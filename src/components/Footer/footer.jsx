@@ -30,9 +30,9 @@ export const Footer = () => {
 						<p class="caption">
 							<MdOutlinePhoneIphone />{" "}
 							<a href="tel:+15712828466">(571) 282-8466</a>{" "}
-							-Call/Text
+							{/* -Call/Text */}
 						</p>
-						<p class="caption">
+						<p class="caption overflow">
 							<CiMail />{" "}
 							<a href="mailto:jennifer@espifitness.com">
 								jennifer@espifitness.com

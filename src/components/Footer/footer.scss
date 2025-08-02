@@ -10,7 +10,7 @@ footer {
 #footer-content {
 	border-top: 1px solid #5f52455f;
 	padding-top: 16px;
-	width: clamp(300px, 80vw, 1000px);
+	width: clamp(375px, 80vw, 1000px);
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -24,12 +24,11 @@ footer {
 		justify-content: center;
 	}
 	align-items: center;
-		div:nth-child(2) {
-			align-items: flex-end;
-			@media screen and (max-width: 768px) {
-				align-items: flex-start;
-				
-			}
+	div:nth-child(2) {
+		align-items: flex-end;
+		@media screen and (max-width: 768px) {
+			align-items: flex-start;
+		}
 	}
 }
 #footer-section {
@@ -47,10 +46,25 @@ footer {
 	}
 	a {
 		text-decoration: none;
-		color: #2F3C25;
+		color: #2f3c25;
 	}
 	button {
 		@include button-style;
+	}
+	.overflow {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		svg {
+			flex-shrink: 0;
+			// margin-right: 5px;
+		}
+
+		a {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis; // Adds ... if text is too long
+		}
 	}
 }
 
