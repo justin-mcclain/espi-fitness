@@ -4,7 +4,7 @@ import heroImage from "../../assets/hero.jpg";
 
 const Home = () => {
 	return (
-		<div>
+		<div id="home">
 			<div
 				id="home-hero"
 				style={{
